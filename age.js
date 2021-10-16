@@ -4,6 +4,6 @@
 let nowYear  = prompt(" now of year :");
 let birthYear = prompt ("birthYear");
 
-let Age= prompt ( nowYear - birthYear);
+let Age=( nowYear - birthYear);
 
-console.log( 'age now :' + Age);
+alert( 'age now :' + Age);

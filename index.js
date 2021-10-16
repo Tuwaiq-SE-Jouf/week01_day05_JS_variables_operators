@@ -7,5 +7,5 @@
  let locale = prompt(" location :");
  let job = prompt("my job: ");
  let future = (Name + numberChild + parnerName + locale + job) ;
- future = prompt (Name +"  "+ numberChild +"  "+ parnerName +"   "+ locale +"  "+ job);
- console.log( future);
+ future = ("name:"+ Name +"number of cild:"+ numberChild +" my parnerName: "+ parnerName +" location :  "+ locale +" work now: "+ job);
+ alert( "my info :   " +future);
