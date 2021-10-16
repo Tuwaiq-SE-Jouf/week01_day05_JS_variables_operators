@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Exercise</title>
+  </head>
+  <body class="container">
+    <h1>Exercise</h1>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">number of children</label>
+        <input
+          class="form-control"
+          type="text"
+          id="txt"
+          name="txt"
+          onclick="this.value = '' "
+        />
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">partner's name</label>
+        <input
+          class="form-control"
+          type="text"
+          id="txt3"
+          name="txt3"
+          onclick="this.value = '' "
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">geographic location</label>
+        <input
+          class="form-control"
+          type="text"
+          id="txt4"
+          name="txt4"
+          onclick="this.value = '' "
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputPassword1">job title</label>
+        <input
+          class="form-control"
+          type="text"
+          id="txt5"
+          name="txt5"
+          onclick="this.value = '' "
+        />
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick="getAndSetVal();">
+        show
+      </button>
+    </form>
+
+    <input
+      type="text"
+      id="txt2"
+      name="txt"
+      onclick="this.value = '' "
+      disabled
+      class="my-5"
+      style="border: none !important; font-size: 1.5rem; width: 1000px"
+    />
+
+    <script>
+      function getAndSetVal() {
+        var txt1 = document.getElementById("txt").value;
+        var txt3 = document.getElementById("txt3").value;
+        var txt4 = document.getElementById("txt4").value;
+        var txt5 = document.getElementById("txt5").value;
+
+        document.getElementById("txt2").value =
+          "You will be a " +
+          txt5 +
+          " in " +
+          txt4 +
+          ", and married to " +
+          txt3 +
+          " " +
+          " with " +
+          txt1 +
+          " kids.";
+      }
